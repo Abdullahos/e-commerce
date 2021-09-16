@@ -1,0 +1,29 @@
+2021-09-16 01:57:14,790 INFO org.springframework.boot.StartupInfoLogger [main] Starting SareetaApplication on DESKTOP-HLGJG5B with PID 2292 (E:\all E\java\udacity halal\resources\JDND-master\JDND-master\projects\P04-eCommerce Application\starter_code\target\classes started by abdul in E:\all E\java\udacity halal\resources\JDND-master\JDND-master\projects\P04-eCommerce Application\starter_code)
+2021-09-16 01:57:14,818 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2021-09-16 01:57:14,821 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-09-16 01:57:16,321 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-09-16 01:57:16,464 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 127ms. Found 4 JPA repository interfaces.
+2021-09-16 01:57:17,491 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2021-09-16 01:57:17,514 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2021-09-16 01:57:17,516 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-09-16 01:57:17,516 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-16 01:57:17,751 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-09-16 01:57:17,752 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2816 ms
+2021-09-16 01:57:17,949 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-16 01:57:18,179 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-16 01:57:18,274 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-16 01:57:18,383 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2021-09-16 01:57:18,384 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'JWTAuthenticationFilter' configured for use
+2021-09-16 01:57:18,395 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.18.Final
+2021-09-16 01:57:18,793 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-16 01:57:19,067 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-09-16 01:57:19,119 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f0bab7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5df63359, org.springframework.security.web.header.HeaderWriterFilter@e09f1b6, org.springframework.web.filter.CorsFilter@3a7b2e2, org.springframework.security.web.authentication.logout.LogoutFilter@62765aec, com.example.demo.security.JWTAuthenticationFilter@51dae791, com.example.demo.security.JWTAuthenticationVerficationFilter@337a6d30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b39a3e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cf336fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2921a36a, org.springframework.security.web.session.SessionManagementFilter@11b32a14, org.springframework.security.web.access.ExceptionTranslationFilter@34be065a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1eb9a3ef]
+2021-09-16 01:57:19,393 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2021-09-16 01:57:19,393 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-09-16 01:57:19,421 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-16 01:57:19,457 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2021-09-16 01:57:19,460 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2021-09-16 01:57:20,581 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-16 01:57:20,591 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-16 01:57:21,031 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2021-09-16 01:57:21,040 INFO org.springframework.boot.StartupInfoLogger [main] Started SareetaApplication in 7.416 seconds (JVM running for 8.855)
