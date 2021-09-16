@@ -18,6 +18,9 @@ import java.util.List;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+/**
+ * class to test order controller layer
+ */
 public class OrderControllerTest {
     private OrderController orderController;
     private OrderRepository orderRepository = mock(OrderRepository.class);

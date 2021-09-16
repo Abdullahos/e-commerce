@@ -14,6 +14,9 @@ import java.util.List;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+/**
+ * class to test item controller layer
+ */
 public class ItemControllerTest {
     private ItemController itemController;
     private ItemRepository itemRepository = mock(ItemRepository.class);

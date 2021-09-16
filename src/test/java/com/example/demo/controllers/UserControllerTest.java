@@ -16,7 +16,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- * class to test user controller layer
+ * class to test user controller layer.
  */
 
 public class UserControllerTest {

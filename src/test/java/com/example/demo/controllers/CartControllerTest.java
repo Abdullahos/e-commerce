@@ -18,6 +18,9 @@ import java.util.Optional;
 
 import static org.mockito.Mockito.*;
 
+/**
+ * class to test the cart controller layer
+ */
 public class CartControllerTest {
     private CartController cartController;
     private UserRepository userRepository = mock(UserRepository.class);
