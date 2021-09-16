@@ -1,5 +1,5 @@
 HELP.md
-## removed target/ in order to deploy from docker image
+## removed target/ in order to deploy from docker  image
 ### STS ###
 .apt_generated
 .classpath
