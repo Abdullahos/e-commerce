@@ -43,13 +43,6 @@ logs/
 *.tar.gz
 *.rar
 
-# Specific to Spring Boot
-/src/main/resources/static/uploaded-files/ # If you have a directory for uploaded files
-/src/main/resources/application*.yml
-/src/main/resources/application*.properties
-!/src/main/resources/application.properties # Keep the base application.properties
-!/src/main/resources/application-dev.properties # Keep dev properties
-!/src/main/resources/application-test.properties # Keep test properties
 
 # Environment variables
 .env
