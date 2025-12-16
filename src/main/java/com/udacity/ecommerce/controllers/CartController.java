@@ -32,6 +32,7 @@ public class CartController {
 
     private final CartService cartService;
 
+
     private final ItemService itemService;
 
     public static final Logger logger = LoggerFactory.getLogger(CartController.class);
@@ -42,8 +43,6 @@ public class CartController {
         User user = ctx.getUser();
 
         Item item = itemService.get(request.getItemId());
-
-        Hibernate.initialize(user);
 
         Cart cart = cartService.addToCart(request, user, item);
 

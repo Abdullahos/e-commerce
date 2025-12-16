@@ -13,9 +13,12 @@ import java.util.List;
 public class OrderService {
 
     private final OrderRepository orderRepository;
+    private final UserService userService;
+
 
     public UserOrder submit(User user) {
-        UserOrder order = UserOrder.createFromCart(user.getCart());
+        User persistedUser = userService.findByUserName(user.getUsername());
+        UserOrder order = UserOrder.createFromCart(persistedUser.getCart());
         return orderRepository.save(order);
     }
 

@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.Hibernate;
 
 @Entity
 @Table(name = "cart")
@@ -32,6 +33,7 @@ public class Cart {
     private BigDecimal total = BigDecimal.ZERO;
 
     public void addItem(Item item) {
+        Hibernate.initialize(getItems());
         getItems().add(item);
         total = total.add(item.getPrice());
     }

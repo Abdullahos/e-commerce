@@ -18,10 +18,11 @@ import static com.udacity.ecommerce.controllers.CartController.logger;
 public class CartService {
 
     private final CartRepository cartRepository;
+    private final UserService userService;
 
-    @Transactional
     public Cart addToCart(ModifyCartRequest request, User user, Item item) {
-        Cart cart = user.getCart();
+        User persistedUser = userService.findByUserName(user.getUsername());
+        Cart cart = persistedUser.getCart();
         IntStream.range(0, request.getQuantity())	//todo: check the availability first
                 .forEach(i -> cart.addItem(item));
 

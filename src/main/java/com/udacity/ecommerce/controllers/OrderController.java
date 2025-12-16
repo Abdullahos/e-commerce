@@ -4,6 +4,7 @@ import com.udacity.ecommerce.model.persistence.User;
 import com.udacity.ecommerce.model.persistence.UserOrder;
 import com.udacity.ecommerce.security.Context;
 import com.udacity.ecommerce.service.OrderService;
+import com.udacity.ecommerce.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
