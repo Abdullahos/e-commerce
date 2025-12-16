@@ -5,6 +5,7 @@ import com.udacity.ecommerce.model.persistence.Item;
 import com.udacity.ecommerce.model.persistence.User;
 import com.udacity.ecommerce.model.requests.ModifyCartRequest;
 import com.udacity.ecommerce.security.Context;
+import com.udacity.ecommerce.security.UserPrincipal;
 import com.udacity.ecommerce.service.CartService;
 import com.udacity.ecommerce.service.ItemService;
 import org.junit.jupiter.api.BeforeEach;
@@ -45,8 +46,7 @@ public class CartControllerTest {
         user.setId(1L);
         user.setUsername("testuser");
 
-        context = new Context();
-        context.setUser(user);
+        context = new UserPrincipal(user);
 
         item = new Item();
         item.setId(1L);

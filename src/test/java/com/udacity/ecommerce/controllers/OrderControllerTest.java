@@ -4,6 +4,7 @@ import com.udacity.ecommerce.model.persistence.Cart;
 import com.udacity.ecommerce.model.persistence.User;
 import com.udacity.ecommerce.model.persistence.UserOrder;
 import com.udacity.ecommerce.security.Context;
+import com.udacity.ecommerce.security.UserPrincipal;
 import com.udacity.ecommerce.service.OrderService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -41,8 +42,7 @@ public class OrderControllerTest {
         user.setUsername("testuser");
         user.setCart(new Cart());
 
-        context = new Context();
-        context.setUser(user);
+        context = new UserPrincipal(user);
 
         order = new UserOrder();
         order.setId(1L);

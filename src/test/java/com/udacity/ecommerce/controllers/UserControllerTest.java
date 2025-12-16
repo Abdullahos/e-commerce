@@ -4,6 +4,8 @@ import com.udacity.ecommerce.exception.PasswordException;
 import com.udacity.ecommerce.exception.UserException;
 import com.udacity.ecommerce.model.persistence.User;
 import com.udacity.ecommerce.model.requests.CreateUserRequest;
+import com.udacity.ecommerce.security.Context;
+import com.udacity.ecommerce.security.UserPrincipal;
 import com.udacity.ecommerce.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -82,9 +84,9 @@ public class UserControllerTest {
 
     @Test
     public void findByUserName_happy_path() {
-        when(userService.findByUserName(user.getUsername())).thenReturn(user);
+        Context context = new UserPrincipal(user);
 
-        ResponseEntity<User> response = userController.findByUserName(user.getUsername());
+        ResponseEntity<User> response = userController.findByUserName(context);
 
         assertNotNull(response);
         assertEquals(HttpStatus.OK, response.getStatusCode());
@@ -96,6 +98,7 @@ public class UserControllerTest {
     public void findByUserName_user_not_found() {
         when(userService.findByUserName(user.getUsername())).thenThrow(new UserException());
 
-        assertThrows(UserException.class, () -> userController.findByUserName(user.getUsername()));
+        Context context = new UserPrincipal(user);
+        assertThrows(UserException.class, () -> userController.findByUserName(context));
     }
 }
