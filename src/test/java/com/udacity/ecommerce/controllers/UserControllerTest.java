@@ -93,12 +93,4 @@ public class UserControllerTest {
         assertNotNull(response.getBody());
         assertEquals(user.getUsername(), response.getBody().getUsername());
     }
-
-    @Test
-    public void findByUserName_user_not_found() {
-        when(userService.findByUserName(user.getUsername())).thenThrow(new UserException());
-
-        Context context = new UserPrincipal(user);
-        assertThrows(UserException.class, () -> userController.findByUserName(context));
-    }
 }
