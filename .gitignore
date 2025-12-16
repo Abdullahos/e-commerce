@@ -1,15 +1,72 @@
-HELP.md
-## removed target/ in order to deploy from docker  image
-### STS ###
-.apt_generated
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+release-pom.xml
+
+# Eclipse
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
-### IntelliJ IDEA ###
-.idea
-*.iws
+.settings/
+.buildpath
+.metadata/
+
+# IntelliJ IDEA
+.idea/
 *.iml
 *.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Specific to Spring Boot
+/src/main/resources/static/uploaded-files/ # If you have a directory for uploaded files
+/src/main/resources/application*.yml
+/src/main/resources/application*.properties
+!/src/main/resources/application.properties # Keep the base application.properties
+!/src/main/resources/application-dev.properties # Keep dev properties
+!/src/main/resources/application-test.properties # Keep test properties
+
+# Environment variables
+.env
+
+# IDE-specific files
+*.swp
+*~
+.#*
+.bak
+*.orig
+*.rej
+
+# Database files
+*.mv.db # H2 database files
+*.trace.db # H2 trace files
+
+# Maven Wrapper
+.mvn/
+mvnw
+mvnw.cmd
